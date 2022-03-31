@@ -1,5 +1,6 @@
 ---
 - hosts: NewRelic 
+  StrictHostKeyChecking: no
   become: True
   tasks:
     - name: Install packages
